@@ -1,0 +1,33 @@
+/* Imports */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+:root {
+    --cor-fundo: #2c3333;
+    --cor-titulo: #a5c9ca;
+    --cor-texto: #e7f6f2;
+    /* --cor-hover:#395b64; */
+    --cor-hover: #2dc9cd;
+    /* --fonte-titulo:; */
+    --font-titulo: "Playfair Display SC", serif;
+    --fonte-texto: "EB Garamond", serif;
+  }
+
+
+
+/* BACKGROUND */
+.bg-contact{background-color: #01b53a;}
+.bg-contact:hover{background-color: rgb(12, 151, 65); color: aliceblue;}
+.bg-white{background-color: white;}
+/* .bg-black{background-color: black;} */
+.bg-black{background-color: #2c3333 !important;}
+
+/* COLORS TEXT*/
+
+.c-white{color: white;}
+.c-black{color: black;}
+
+/* BORDER */
+
+.border-b-white{
+    border-bottom: 3px solid white;
+}

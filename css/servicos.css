@@ -1,0 +1,70 @@
+:root {
+    --cor-fundo: #2c3333;
+    --cor-titulo: #a5c9ca;
+    --cor-texto: #e7f6f2;
+    /* --cor-hover:#395b64; */
+    --cor-hover: #2dc9cd;
+    /* --fonte-titulo:; */
+    --font-titulo: "Playfair Display SC", serif;
+    --fonte-texto: "EB Garamond", serif;
+  }
+
+
+/* section 2 */
+
+#sec2{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   #title-section2{
+    margin: 10px 0px;
+   }
+
+#sec2 a{
+    position: absolute;
+    top: 200px;
+}
+
+#sec2 #icon-back{
+    font-size: 40px;
+}
+
+.cards{
+    width: 22%;
+    margin: 20px;
+    box-shadow: 1px 1px 5px gray;
+    padding: 1.5rem;
+    transition: 0.4s;
+   }
+
+.cards:hover{
+    box-shadow: 0 0 10px var(--cor-hover);
+    transform: scale(1.2);
+}
+
+ .cards h5{
+    font-family: var(--fonte-titulo);
+ }
+
+   .cards p{
+    font-size: 0.7rem;
+    font-family: var(--fonte-texto);
+   }
+
+   .cards button{
+    width: 100%;
+    min-width: max-content;
+   }
+   
+   .config-icon{
+    font-size: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+   }
+
+   .letras{
+    height: 80%;
+   }

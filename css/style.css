@@ -1,0 +1,305 @@
+/* estrutura inicial */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+:root {
+  --cor-fundo: #2c3333;
+  --cor-titulo: #a5c9ca;
+  --cor-texto: #e7f6f2;
+  /* --cor-hover:#395b64; */
+  --cor-hover: #2dc9cd;
+  /* --fonte-titulo:; */
+  --font-titulo: "Playfair Display SC", serif;
+  --fonte-texto: "EB Garamond", serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  z-index: 1;
+  background-color: var(--cor-fundo);
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo-superior {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header .logo-superior a {
+ height: 100px;
+}
+
+header .titulo {
+  color: #a5c9ca;
+  font-family: var(--font-titulo);
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+header .menu {
+  background-color: var(--cor-fundo);
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+
+.menu a {
+  position: relative;
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  color: var(--cor-titulo);
+  transition: 0.3s;
+  margin: 0px 30px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--cor-hover);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+.menu a:hover:after {
+  width: 100%;
+}
+
+/* elementos adicionais */
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, black, rgb(24, 24, 23));
+    background-image: linear-gradient(to bottom, rgb(24, 24, 23),black);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  #contact{
+    position: fixed;
+    bottom: 3%;
+    right:3%;
+    z-index: 1;
+    font-size: 1.1rem;
+}
+
+/* Main */
+main{
+    font-family: "Montserrat", sans-serif;
+    height: 85vh;
+    background-image: url("../imagens/carrin2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    position: relative;
+}
+
+main h1{
+    z-index: 1;
+    position: relative;
+  }
+
+  main h4{
+    z-index: 1;
+    position: relative;
+    margin-top: 5rem ;
+  }
+
+main h2{
+    z-index: 1;
+    position: relative;
+    font-size: 2,5rem;
+}
+
+main h5{
+  z-index: 1;
+  position: relative;
+}
+
+
+
+main button{
+    z-index: 1;
+    position: relative;
+    width: 25vw;
+    min-width: max-content;
+}
+  /* section 1 */
+
+
+  #sec1{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #sec1 p {
+    font-size: 2rem;
+    width: 70%;
+    max-width: 100%; /* Limita a largura do parágrafo */
+    margin-left: auto;
+    margin-right: auto;
+  }
+   
+  /* FOOTER  */
+
+  footer {
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* REDES SOCIAIS */
+
+.redes-socias {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-socias a {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    transition: 0.4s;
+    margin: 10px;
+}
+
+.redes-socias a:hover {
+    color: var(--cor-hover);
+    transform: scale(1.6);
+}
+
+/* MAPA */
+footer .mapBox {
+    position: relative;
+    background-color: white;
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes .subtitulo {
+    color: var(--cor-titulo);
+    font-size: 24px;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0px;
+}
+
+.informacoes .paragrafo {
+    color: var(--cor-texto);
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0px;
+}
+
+/* Copyright */
+
+.footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: var(--cor-texto);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+   /* RESPONSIVIDADE MEDIA SCREEN */
+  @media screen and (max-width: 768px) {
+
+    .informacoes{
+      padding: 1rem;
+    }
+
+    #sec1 p {
+      font-size: 0.8rem; /* Ajuste o tamanho da fonte para telas maiores */
+    }
+
+    main{
+      background-position:40% 100%;
+  }
+
+    .cards{
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 1px 1px 5px gray;
+      padding: 1.5rem;
+     }
+
+     header{
+      margin-bottom: 15vh;
+    }
+
+    header .menu {
+      background-color: var(--cor-fundo);
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+    }
+
+    .menu a{
+      margin: 0px 20px;
+    }
+  }
+
+
+  @media screen and (max-width: 560px) {
+    
+   
+    
+    .cards h5{
+      font-size: 1rem;
+    }
+
+    .cards p{
+      font-size: 0.7rem;
+    }
+
+    .rodape .mapBox {
+      position: relative;
+      background-color: white;
+      width: 100%;
+  }
+  }
